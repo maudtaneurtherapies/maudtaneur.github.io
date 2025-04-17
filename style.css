@@ -83,3 +83,27 @@ footer {
 .btn:hover {
   background-color: #d3b355;
 }
+.presentation {
+  background-color: #F4EBD0;
+  padding: 2rem;
+  line-height: 1.6;
+  color: #264653;
+}
+
+.presentation h2, .presentation h3 {
+  color: #A8BDA0;
+  margin-top: 2rem;
+}
+
+.presentation ul {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+blockquote {
+  background-color: #EFCB68;
+  padding: 1rem;
+  border-left: 5px solid #264653;
+  font-style: italic;
+  margin: 2rem 0;
+}
