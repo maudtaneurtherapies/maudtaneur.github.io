@@ -284,4 +284,22 @@ blockquote {
     opacity: 1;
     transform: translateY(0);
   }
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.galerie img {
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.galerie img:hover {
+  transform: scale(1.05);
 }
