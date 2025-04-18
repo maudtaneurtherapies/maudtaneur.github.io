@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
   <title>Contact & Agenda - Maud Taneur</title>
-  <meta name="description" content="Contact & Agenda - Thérapies, soins énergétiques et coaching">
-  <link rel="stylesheet" href="style_responsive_global.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <meta name="description" content="Contactez Maud Taneur et réservez un soin ou coaching via le calendrier en ligne.">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style_contact.css" />
+  <script>
+    function envoyerFormulaire(event) {
+      event.preventDefault();
+      const nom = document.getElementById('nom').value;
+      const message = `Merci ${nom}, votre message a bien été envoyé. Je vous répondrai dès que possible. 🙏`;
+      document.getElementById('confirmation').innerText = message;
+      document.getElementById('formulaire-contact').reset();
+    }
+  </script>
 </head>
 <body>
   <header>
-    <h1>Contact & Agenda</h1>
+    <h1>📅 Contact & Agenda</h1>
     <nav>
-  <ul>
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="coaching.html">Coaching</a></li>
-    <li><a href="soins-distance.html">Soins à Distance</a></li>
-    <li><a href="autres.html">Autres</a></li>
-    <li><a href="tarifs.html">Tarifs</a></li>
-    <li><a href="contact-agenda.html">Contact & Agenda</a></li>
-    <li><a href="blog.html">Blog</a></li>
-  </ul>
-</nav>
+      <ul>
+        <a href="index.html">Accueil</a>
+        <a href="contact-agenda">Contact-agenda</a>
+     <ul>
+    </nav>
   </header>
 
   <section>
-    <p>Bienvenue sur la page contact & agenda.</p>
+    <div class="back-button">
+      <a href="index.html" class="btn-accueil">← Retour à l'accueil</a>
+    </div>
+
+    <h2>Formulaire de contact rapide</h2>
+    <form id="formulaire-contact" onsubmit="envoyerFormulaire(event)">
+      <label for="nom">Votre prénom :</label><br>
+      <input type="text" id="nom" name="nom" required><br><br>
+
+      <label for="email">Votre email :</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Votre message :</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <button type="submit" class="btn-accueil">Envoyer</button>
+    </form>
+    <p id="confirmation" style="margin-top:20px; font-weight:bold; color:green;"></p>
+
+    <h2>Réservez votre séance en ligne</h2>
+    <p>Consultez mes disponibilités ci-dessous. Vous recevrez une confirmation automatique.</p>
+
+    <div class="agenda-wrapper">
+      <iframe src="https://calendly.com/taneurmaudmagnetisme" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
   </section>
 
   <footer>
