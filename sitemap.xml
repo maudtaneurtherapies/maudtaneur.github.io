@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset 
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://maudtaneurtherapies.com/</loc></url>
-  <url><loc>https://maudtaneurtherapies.com/blog/blog.html</loc></url>
+  <url><loc>https://maudtaneurtherapies.com/index.html</loc></url>
+  <url><loc>https://maudtaneurtherapies.com/soins-distance.html</loc></url>
+  <url><loc>https://maudtaneurtherapies.com/tarifs.html</loc></url>
+  <url><loc>https://maudtaneurtherapies.com/contact.html</loc></url>
+  <url><loc>https://maudtaneurtherapies.com/blog.html</loc></url>
 </urlset>

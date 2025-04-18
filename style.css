@@ -1,39 +1,17 @@
 body {
   font-family: 'Lora', serif;
   font-size: 14px;
-  margin: 0;
   background-color: #F4EBD0;
   color: #264653;
+  margin: 0;
+  padding: 0;
 }
 header {
   background-color: #264653;
-  color: #F4EBD0;
+  color: white;
   padding: 20px;
   text-align: center;
 }
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-nav a {
-  color: #EFCB68;
-  text-decoration: none;
-  font-weight: bold;
-}
-.hero {
-  background-color: #A8BDA0;
-  text-align: center;
-  padding: 40px 20px;
-}
-footer {
-  background-color: #264653;
-  color: #F4EBD0;
-  text-align: center;
-  padding: 15px;
-}
-.content {
-  padding: 40px 20px;
+section {
+  padding: 20px;
 }
