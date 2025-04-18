@@ -1,0 +1,58 @@
+body {
+  font-family: 'Lora', serif;
+  background-color: #F4EBD0;
+  color: #264653;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+nav a {
+  color: #EFCB68;
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+.agenda-wrapper {
+  margin-top: 20px;
+  box-shadow: 0 0 15px #a8bda0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.btn-accueil {
+  background-color: #EFCB68;
+  color: #264653;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+.btn-accueil:hover {
+  background-color: #d3b355;
+  transform: scale(1.05);
+}
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
