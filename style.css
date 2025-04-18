@@ -1,6 +1,5 @@
 body {
   font-family: 'Lora', serif;
-  font-size: 14px;
   background-color: #F4EBD0;
   color: #264653;
   margin: 0;
@@ -9,9 +8,27 @@ body {
 header {
   background-color: #264653;
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 20px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+nav a {
+  color: #EFCB68;
+  text-decoration: none;
+  font-weight: bold;
 }
 section {
   padding: 20px;
+}
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
