@@ -44,3 +44,85 @@ footer {
     gap: 10px;
   }
 }
+
+body {
+  font-family: 'Lora', serif;
+  background-color: #F4EBD0;
+  color: #264653;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0 0 0;
+}
+nav li {
+  margin: 5px 0;
+}
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #EFCB68;
+  color: #264653;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+nav a:hover {
+  background-color: #d3b355;
+  transform: scale(1.05);
+}
+
+/* Section and General Layout */
+section {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+}
