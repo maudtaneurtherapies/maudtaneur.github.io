@@ -3,9 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tarifs</title>
+  <title>Tarifs - Maud Taneur</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
+  <style>
+    .tarifs-list {
+      background-color: #F4EBD0;
+      padding: 2rem;
+      margin: 2rem;
+      border-radius: 1rem;
+      font-family: 'Lora', serif;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .tarifs-list ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .tarifs-list li {
+      margin-bottom: 1rem;
+      padding: 0.8rem 1rem;
+      background-color: #ffffff;
+      border-left: 6px solid #A8BDA0;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .tarifs-list li:hover {
+      transform: translateX(5px);
+      background-color: #EFCB68;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -13,26 +54,31 @@
     <nav>
       <a href="index.html">Accueil</a>
       <a href="soins-energetiques.html">Soins énergétiques</a>
+      <a href="massages.html">Massages</a>
+      <a href="coaching.html">Coaching</a>
       <a href="autres.html">Autres</a>
     </nav>
   </header>
 
   <main>
-    <section class="presentation">
-      
-        <h2>Tarifs des prestations 💶</h2>
-        <ul>
-          <li>✨ Rééquilibrage énergétique : 60€</li>
-          <li>✨ Magnétisme coupeur de feu : 40€</li>
-          <li>✨ Soins à distance : 45€</li>
-          <li>✨ Massage relaxant ou dynamisant (1h) : 70€</li>
-          <li>✨ Massage crânien : 40€</li>
-          <li>✨ Massage à la bougie ou pierres chaudes : 75€</li>
-          <li>✨ Coaching personnalisé : 50€ / séance</li>
-        </ul>
-        <p>Les règlements se font en espèces ou par virement.</p>
-        <p>Merci de prévenir en cas d’annulation au moins 24h à l’avance.</p>
-        
+    <section class="tarifs-list">
+      <h2>🌿 Tarifs des prestations</h2>
+      <ul>
+        <li>👐🌈 Rééquilibrages énergétiques en présentiel – 70 € (environ 1h)</li>
+        <li>👐🌈 Rééquilibrages énergétiques à distance – 50 € (environ 1h)</li>
+        <li>👐 Soins énergétiques – 50 € (environ 45 mins)</li>
+        <li>👐 Soins énergétiques à distance – 40 € (env 45 mins)</li>
+        <li>👐🪷 Soins énergétiques + Massages relaxants – 110 € (env 1h 45 mins)</li>
+        <li>🚭 Séance magnétisme arrêt du tabac – 35 € (env 30 mins)</li>
+        <li>🔥 Coupeur de feu à distance – 5 € (env 15 mins)</li>
+        <li>🔥 Coupeur de feu en présentiel – 15 € (env 15 mins)</li>
+        <li>🌸 Massages – 80 € (45 mins) Corps entier</li>
+        <li>💆 Massages crâniens – 40 € (30 mins) Tête, nuque</li>
+        <li>🕯️ Massages à la bougie – 100 € (45 mins) Corps entier</li>
+        <li>🪨 Massages aux pierres chaudes – 110 € (45 mins) Corps entier</li>
+        <li>🌻 Soin minceur à la machine – 35 € (30 mins) Cuisses, ventre, fesses</li>
+        <li>📝 Coaching – 40 € de l'heure (présentiel, téléphone ou visio)</li>
+      </ul>
     </section>
   </main>
 
