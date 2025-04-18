@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
   <title>Avis & Galerie Photos - Maud Taneur</title>
-  <meta name="description" content="Découvrez les photos des soins énergétiques et l'espace bien-être de Maud Taneur.">
+  <meta name="description" content="Témoignages de clients et galerie photo des soins énergétiques de Maud Taneur.">
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
@@ -40,6 +40,18 @@
       max-height: 90%;
       border-radius: 10px;
     }
+    .testimonial {
+      background-color: #ffffffd5;
+      border-left: 5px solid #A8BDA0;
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+    .testimonial strong {
+      display: block;
+      margin-top: 10px;
+      font-style: italic;
+    }
   </style>
   <script>
     function showLightbox(src) {
@@ -63,13 +75,38 @@
       </ul>
     </nav>
   </header>
-
   <section>
     <p>Voici quelques photos de mes espaces de soin et séances.</p>
     <div class="gallery-container">
         <img src="images/galerie1.png" alt="Soin énergétique">
         <img src="images/galerie2.jpg" alt="Maud Taneur portrait">
         <img src="images/galerie3.jpg" alt="Espace bien-être">
+    </div>
+
+  <section>
+    <h2>🙏 Témoignages</h2>
+
+    <div class="testimonial">
+      <p>"Un immense merci à Maud pour son don exceptionnel, sa bienveillance et son professionnalisme qui ont véritablement fait la différence. Je suis ressortie de ce soin sereine et avec des tensions physiques en moins. Je la recommande vivement 🧘‍♀️"</p>
+      <strong>— Valentine</strong>
+    </div>
+
+    <div class="testimonial">
+      <p>"Maud est une personne incroyable, douce, bienveillante, à l'écoute. Un vrai rayon de soleil qui a un don pour soigner vos maux et votre âme grâce à sa douceur et son intuition. Son soin m'a apporté beaucoup d'apaisement et a soigné mon eczéma sur les mains, je la recommande les yeux fermés 😊"</p>
+      <strong>— Elodie</strong>
+    </div>
+
+    <div class="testimonial">
+      <p>"Un grand merci à Mme Taneur qui m'a prodigué des soins d'une très grande qualité qui m'ont permis de me ressourcer et de lâcher prise durant cette heure de soins. N'hésitez pas à prendre rendez-vous, vous ne serez pas déçu."</p>
+      <strong>— Mickaël</strong>
+    </div>
+
+    <h2>📸 Galerie</h2>
+    <p>Voici quelques photos de mes espaces de soin et séances.</p>
+    <div class="gallery-container">
+      <img src="images/galerie1.png" onclick="showLightbox(this.src)" alt="soin énergétique">
+      <img src="images/galerie2.jpg" onclick="showLightbox(this.src)" alt="portrait Maud Taneur">
+      <img src="images/galerie3.jpg" onclick="showLightbox(this.src)" alt="Espace bien-être Maud Taneur">
     </div>
   </section>
 
